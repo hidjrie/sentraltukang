@@ -11,8 +11,10 @@ This app is only for demo purpose created by Ikhsannul Hijri
 * CSS Framework: Tailwind CSS
 * Other Library: Font Awesome
 
-## Link Repository
+## Repository Link
 
 https://github.com/hidjrie/sentraltukang
 
- 
+## Demo Link
+
+http://ikhsannulhijri.epizy.com
