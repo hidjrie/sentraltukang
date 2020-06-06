@@ -19,7 +19,7 @@
                         class="border-b-2 border-main-green w-full p-2 outline-none focus:border-main-orange">
                 </div>
                 <div class="mb-5">
-                    <input type="password" name="password" id="email" placeholder="Password"
+                    <input type="password" name="password" id="password" placeholder="Password"
                         class="border-b-2 border-main-green w-full p-2 outline-none focus:border-main-orange">
                 </div>
                 <div class="mb-5">
