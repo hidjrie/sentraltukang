@@ -10,10 +10,7 @@
         v-bind:key="user.id"
       >
         <div class="flex bg-white w-lg shadow shadow-lg">
-          <div v-if="user.image">
-            <img class="object-full h-36 w-36 object-cover" v-bind:src="'storage/' + user.image" />
-          </div>
-          <div v-else>
+          <div>
             <img class="object-full h-36 w-36" src="img/avatar-placeholder.png" />
           </div>
           <div class="p-4 pt-6 flex flex-col items-start">

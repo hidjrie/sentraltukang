@@ -10,16 +10,15 @@
                     List</a>
             </li>
             <li class="sm:ml-6 mt-3 sm:mt-0">
-                <a href="{{ route('profile.show') }}"
+                <a href="{{ route('profile.index') }}"
                     class="{{ Request::is('profile*') ? 'text-main-orange' : 'text-main-brown' }} hover:text-main-orange">Profile</a>
             </li>
         </ul>
         <div class="flex flex-col sm:flex-row items-center">
             <div class="sm:ml-4 mt-3 sm:mt-0 flex">
-                <a href="{{ route('profile.show') }}"><img
-                        src="@if(Auth::user()->image) {{ url('storage/'.Auth::user()->image) }} @else {{ asset('img/avatar-placeholder.png')}} @endif"
+                <a href="{{ route('profile.index') }}"><img src="{{ asset('img/avatar-placeholder.png') }}"
                         class="rounded-full w-8 h-8"></a>
-                <a href="{{ route('profile.show') }}">
+                <a href="{{ route('profile.index') }}">
                     <div class="ml-2 mt-1 text-main-brown hover:text-main-orange">{{ Auth::user()->name }}</div>
                 </a>
             </div>

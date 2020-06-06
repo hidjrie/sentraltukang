@@ -4,8 +4,7 @@
 @include('layouts.navbar')
 
 <div class="w-full max-w-xs bg-white shadow shadow-md m-auto mt-4">
-    <img src="@if($profile->image) {{ url('storage/'.$profile->image) }} @else img/avatar-placeholder.png @endif"
-        alt="avatar" class="w-full mb-3">
+    <img src="{{ asset('img/avatar-placeholder.png')}}" alt="avatar" class="w-full mb-3">
     <div class="px-5">
         <h3 class="text-main-orange text-lg md:text-md font-semibold">{{ $profile->name}}</h3>
     </div>

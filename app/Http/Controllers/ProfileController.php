@@ -57,7 +57,8 @@ class ProfileController extends Controller
         }
         $profile->save();
 
-        return redirect(route('profile.show'))->with('message', 'Your profile updated succesfully. 😊');
+        return redirect(route('profile.index'))->with('message', 'Your profile updated succesfully. 😊');
     }
 
 }
+ 

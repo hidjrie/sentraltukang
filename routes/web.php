@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/users', 'UserController@index')->name('user.index');
-Route::get('/profile', 'ProfileController@index')->name('profile.show');
+Route::get('/profile', 'ProfileController@index')->name('profile.index');
 Route::get('/profile/{profile}/edit', 'ProfileController@edit')->name('profile.edit');
 Route::patch('/profile/{profile}', 'ProfileController@update')->name('profile.update');
 
