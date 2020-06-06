@@ -3,7 +3,10 @@
 @section('content')
 @include('layouts.navbar')
 
+<h1 class="text-center my-2 text-2xl text-main-orange uppercase">Your Profile</h1>
 <div class="w-full max-w-xs bg-white shadow shadow-md m-auto mt-4">
+    @include('includes.messages')
+
     <img src="{{ asset('img/avatar-placeholder.png')}}" alt="avatar" class="w-full mb-3">
     <div class="px-5">
         <h3 class="text-main-orange text-lg md:text-md font-semibold">{{ $profile->name}}</h3>

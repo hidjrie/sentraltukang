@@ -5,5 +5,5 @@
 @endforeach
 @endif
 @if (session()->has('message'))
-<p class="alert alert-success">{{ session('message') }}</p>
+<div class="w-100 bg-main-green p-2 m-0 text-white">{{ session('message') }}</div>
 @endif

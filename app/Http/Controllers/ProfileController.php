@@ -24,8 +24,12 @@ class ProfileController extends Controller
 
     public function edit($id)
     {
+        $profile_id = Auth::guard('web')->user()->id;
+        if ($profile_id == $id) {
             $profile = User::find($id);
             return view('profile.edit', compact('profile'));
+        }
+        return redirect(route('profile.index'));
     }
 
     public function update(Request $request, $id)
@@ -37,21 +41,7 @@ class ProfileController extends Controller
         ]);
         
         $profile = User::find($id);
-        // dd($profile);
-
-        if(request('image')) {
-            $imagePath = request('image')->store('profile', 'public');
-            $image = "storage/".$profile->image;
-            // dd($image);
-            $deleted = File::delete($image);
-            // dd($deleted);
-            $image = Image::make(public_path("storage/{$imagePath}"))->fit(500, 500);
-            $image->save();
-            $imageArray = ['image' => $imagePath];
-        }
-
         $profile->name = $request->name;
-        $profile->image = $imagePath ?? $request->old_image;
         if ($request->password) {
             $profile->password = bcrypt($request->password);
         }
