@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <h1 class="text-center my-8 text-2xl text-main-orange uppercase">List of Users</h1>
+      <h1 class="text-center my-2 text-2xl text-main-orange uppercase">List of Users</h1>
     </div>
     <div class="flex flex-wrap max-w-6xl m-auto" v-if="users">
       <div

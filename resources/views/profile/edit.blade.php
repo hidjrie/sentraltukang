@@ -2,7 +2,7 @@
 
 @section('content')
 @include('layouts.navbar')
-<h1 class="text-center my-2 text-2xl text-main-orange uppercase">Edit Profile</h1>
+<h1 class="text-center mt-3 mb-2 text-2xl text-main-orange uppercase">Edit Profile</h1>
 <div class="w-full max-w-xs bg-white shadow shadow-md m-auto mt-4 mb-4">
     <img src="{{ asset('img/avatar-placeholder.png') }}" alt="" class="w-full mb-5">
 

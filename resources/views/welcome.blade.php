@@ -27,7 +27,7 @@
         </div>
         <div>
             <h1 class="text-main-orange  text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center">This is
-                demo app created by Ikhsannul Hijri</h1>
+                demo app created by <strong>Ikhsannul Hijri</strong></h1>
         </div>
         <div class="flex flex-col sm:flex-row mt-5">
             @if (Route::has('login'))
@@ -56,7 +56,6 @@
             @endauth
         </div>
         @endif
-
     </div>
 </body>
 
