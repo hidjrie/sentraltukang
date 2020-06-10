@@ -3,7 +3,7 @@
 @section('content')
 @include('layouts.navbar')
 <h1 class="text-center mt-3 mb-2 text-2xl text-main-orange uppercase">Edit Profile</h1>
-<div class="w-full max-w-xs bg-white shadow shadow-md m-auto mt-4 mb-4 h-auto">
+<div class="w-full max-w-xs bg-white shadow shadow-md m-auto mt-4 mb-4 pb-1 h-auto">
     <img src="{{ asset('img/avatar-placeholder.png') }}" alt="" class="w-full mb-5">
 
     <form role="form" action="{{ route('profile.update', $profile->id) }}" method="POST" enctype="multipart/form-data">
@@ -30,7 +30,7 @@
                 class="w-full rounded-md p-2 mb-2 text-white shadow text-center bg-main-orange hover:bg-secondary-orange shadow shadow-md focus:outline-none"><i
                     class="fas fa-check"></i> Save Profile</button>
         </div>
-        <div class="px-5 pb-2">
+        <div class="px-5 mb-2">
             <a href="{{ route('profile.index') }}">
                 <div
                     class="w-full mb-4 rounded-md p-2 text-white shadow shadow-md border text-center bg-main-green hover:bg-secondary-green">

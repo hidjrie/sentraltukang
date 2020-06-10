@@ -38,10 +38,12 @@
                         class="w-full bg-main-orange rounded-md p-2 text-white hover:bg-secondary-orange shadow shadow-md focus:outline-none">Register</button>
                 </div>
             </form>
-            <div>
-                <a type="submit" href="{{ route('login') }}"
-                    class="w-full rounded-md p-2 text-main-orange shadow shadow-md border border-grey-400 text-center bg-white hover:bg-orange-100">Login</a>
-            </div>
+            <a href="{{ route('login') }}">
+                <div
+                    class="w-full rounded-md p-2 text-main-orange shadow shadow-md border border-grey-400 text-center bg-white hover:bg-orange-100">
+                    Login
+                </div>
+            </a>
         </div>
     </div>
 </div>
