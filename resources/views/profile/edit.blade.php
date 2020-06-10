@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 @include('layouts.navbar')
 <h1 class="text-center mt-3 mb-2 text-2xl text-main-orange uppercase">Edit Profile</h1>
 <div class="w-full max-w-xs bg-white shadow shadow-md m-auto mt-4 mb-4 h-auto">
@@ -9,9 +10,7 @@
     <form role="form" action="{{ route('profile.update', $profile->id) }}" method="POST" enctype="multipart/form-data">
         {{ csrf_field() }}
         {{ method_field('PATCH') }}
-
         @include('includes.messages')
-
         <div class="mb-3 px-5">
             <input type="text" name="name" id="name" placeholder="Name"
                 class="border-b-2 border-main-green w-full p-2 outline-none focus:border-main-orange"
@@ -38,8 +37,6 @@
                 </div>
             </a>
         </div>
-
-
     </form>
 </div>
 

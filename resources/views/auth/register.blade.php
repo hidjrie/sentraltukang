@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="h-screen bg-white sm:bg-transparent flex flex-col">
     <div
         class="container h-100 sm:h-auto sm:min-h-35rem sm:w-7/12 md:w-10/12 lg:w-7/12 sm:mt-8 m-auto flex bg-white sm:shadow sm:shadow-md">
@@ -47,6 +48,5 @@
         </div>
     </div>
 </div>
-
 
 @endsection
